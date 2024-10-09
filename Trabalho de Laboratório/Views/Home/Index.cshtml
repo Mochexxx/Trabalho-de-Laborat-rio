@@ -1,0 +1,71 @@
+﻿@using Microsoft.AspNetCore.Mvc.Razor;
+@inherits RazorPage
+
+@{
+    ViewData["Title"] = "Bertrand Livreiros";
+}
+
+<div class="header">
+    <img alt="Bertrand Livreiros Logo" height="50" src="https://storage.googleapis.com/a1aa/image/xXXmgw7o2sqfeUrcFnsd30Uv0IhhDBf27QBfZ7RNeZfRv3Q5E.jpg" width="50" />
+    <div class="search-container">
+        <input placeholder="Pesquisar" type="text" />
+    </div>
+    <div class="icons">
+        <i class="fas fa-user"></i>
+        <i class="fas fa-question-circle"></i>
+        <i class="fas fa-store"></i>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-list"></i>
+    </div>
+</div>
+
+<div class="sidebar">
+    <h2>Livros</h2>
+    <ul>
+        <li><a href="#">Em Português</a></li>
+        <li><a href="#">Em Inglês</a></li>
+        <li><a href="#">Em Espanhol</a></li>
+        <li><a href="#">Em Francês</a></li>
+    </ul>
+    <h2>Ebooks</h2>
+    <h2>Audiolivros</h2>
+    <h2>Livros Escolares</h2>
+    <h2>Apoio Escolar</h2>
+    <div class="biblio">
+        <h2>Biblio</h2>
+        <ul>
+            <li><i class="fas fa-blog"></i><a href="#">Blogue</a></li>
+            <li><i class="fas fa-bookmark"></i><a href="#">Reserva de livros</a></li>
+            <li><i class="fas fa-id-card"></i><a href="#">Cartão Leitor Bertrand</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="banner">
+        <img alt="Promoção de Livros" height="100" src="https://storage.googleapis.com/a1aa/image/er02VTiLtk03I6pVn2qXbJ4rFXPmYYKPvEklwVAOmnXdvhyJA.jpg" width="100" />
+        <div class="text">
+            <h1>20 a 50% TODOS OS LIVROS</h1>
+            <p>Ebooks &amp; Audiolivros</p>
+            <p>20% NAS NOVIDADES</p>
+            <a href="#">VER CONDIÇÕES</a>
+        </div>
+        <div class="buttons">
+            <a href="#">LIVROS ESCOLARES</a>
+            <a href="#">BLOGUE</a>
+        </div>
+    </div>
+
+    <div class="discounts">
+        <h2>OPORTUNIDADES COM GRANDES DESCONTOS | ATÉ -50%</h2>
+        <div class="books">
+            <div class="book">
+                <img alt="O Livro de Fãs de Manga e Anime" height="200" src="https://storage.googleapis.com/a1aa/image/iRtg7Sf4giV6QisqAmDJ3E5oxS5AE0xmAnhhrnmNUcXgvhyJA.jpg" width="150" />
+                <div class="price">11,96€</div>
+                <div class="old-price">14,95€</div>
+                <div class="title">O Livro de Fãs de Manga e Anime</div>
+            </div>
+            <!-- Adicione outros livros aqui, seguindo o mesmo padrão -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+﻿@model Administrador
+
+<h2>Login do Administrador</h2>
+<form asp-action="Login" method="post">
+    <label>Username:</label>
+    <input type="text" asp-for="Username" required />
+    <label>Password:</label>
+    <input type="password" asp-for="Password" required />
+    <button type="submit">Login</button>
+</form>

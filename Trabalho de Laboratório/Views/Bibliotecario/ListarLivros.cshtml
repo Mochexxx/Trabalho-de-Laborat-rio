@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Trabalho_de_Laboratório.Models.Livro>
+
+<h2>Lista de Livros</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var livro in Model)
+        {
+            <tr>
+                <td>@livro.Título</td>
+                <td>@livro.Autor</td>
+                <td>
+                    <a asp-action="Editar" asp-route-id="@livro.ID_Livro">Editar</a>
+                    <a asp-action="Eliminar" asp-route-id="@livro.ID_Livro">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

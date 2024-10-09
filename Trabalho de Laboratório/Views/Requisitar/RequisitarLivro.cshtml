@@ -1,0 +1,10 @@
+﻿@model Trabalho_de_Laboratório.Models.Emprestimo
+
+<h2>Requisitar Livro</h2>
+<form asp-action="RequisitarLivro" method="post">
+    <label>ID do Livro:</label>
+    <input asp-for="ID_Livro" required />
+    <label>ID do Leitor:</label>
+    <input asp-for="ID_Leitor" required />
+    <button type="submit">Requisitar</button>
+</form>
